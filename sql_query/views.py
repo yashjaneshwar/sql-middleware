@@ -10,4 +10,4 @@ def home(request):
 
     # loads method is used to pass the valid json string & convert it into python dictonary
     serialized_data = json.loads(serialized_data)
-    return JsonResponse(serialized_data, status = 200)
+    return JsonResponse(serialized_data,safe=False, status = 200)
