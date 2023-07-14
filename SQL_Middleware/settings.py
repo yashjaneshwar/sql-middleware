@@ -48,6 +48,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'sql_query.middleware.SqlStatsMiddleware',
 ]
 
 ROOT_URLCONF = 'SQL_Middleware.urls'
